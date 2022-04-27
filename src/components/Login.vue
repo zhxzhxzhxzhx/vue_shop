@@ -67,7 +67,7 @@ export default {
           message: '恭喜你, 登录成功!',
           type: 'success'
         })
-        console.log(re.data.token)
+        // console.log(re.data.token)
         window.sessionStorage.setItem('token', re.data.token)
         this.$router.push('/home')
       })
