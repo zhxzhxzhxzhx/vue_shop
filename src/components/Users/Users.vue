@@ -73,7 +73,7 @@
       >
         <!-- 添加用户表单 -->
         <el-form ref='addformref' :model='addform' :rules='addformrules' label-width='60px'>
-          <el-form-item label='用户名' prop='username'>
+          <el-form-item label='姓名' prop='username'>
             <el-input v-model='addform.username'></el-input>
           </el-form-item>
           <el-form-item label='密码' prop='password'>
@@ -82,8 +82,8 @@
           <el-form-item label='邮箱' prop='email'>
             <el-input v-model='addform.email'></el-input>
           </el-form-item>
-          <el-form-item label='手机' prop='phone'>
-            <el-input v-model='addform.phone'></el-input>
+          <el-form-item label='手机' prop='mobile'>
+            <el-input v-model='addform.mobile'></el-input>
           </el-form-item>
         </el-form>
         <span slot='footer' class='dialog-footer'>
@@ -181,7 +181,7 @@ export default {
           { required: true, message: '请输入邮箱', trigger: 'blur' },
           { validator: checkEmail, trigger: 'blur' }
         ],
-        phone: [
+        mobile: [
           { required: true, message: '请输入手机号', trigger: 'blur' },
           { validator: checkPhone, trigger: 'blur' }
         ]
@@ -201,7 +201,7 @@ export default {
           { required: true, message: '请输入邮箱', trigger: 'blur' },
           { validator: checkEmail, trigger: 'blur' }
         ],
-        phone: [
+        mobile: [
           { required: true, message: '请输入手机号', trigger: 'blur' },
           { validator: checkPhone, trigger: 'blur' }
         ]
