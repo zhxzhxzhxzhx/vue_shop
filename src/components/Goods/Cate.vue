@@ -260,7 +260,7 @@ export default {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
         type: 'warning'
-      })
+      }).catch(err => err)
       if (resultconfirm !== 'confirm') {
         return
       }
